@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="developerMasterPage.master.cs" Inherits="Developer_developerMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+            <tr>
+                <td colspan="2" style="height: 3px">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/images/header2.JPG" Height="139px" Width="993px"></asp:Image>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 200px">
+                <table>
+                <tr>
+                <td><asp:LinkButton ID="lnkhome" runat="server" CausesValidation="False" OnClick="lnkhome_Click">Main Page</asp:LinkButton></td>
+                </tr>
+                <tr>
+                <td><asp:LinkButton ID="lnknew" runat="server" CausesValidation="False" OnClick="lnknew_Click">New Developer Details</asp:LinkButton></td>
+                </tr>
+                <tr>
+                <td><asp:LinkButton ID="lnkedit" runat="server" CausesValidation="False" OnClick="lnkedit_Click">Edit Developer Details</asp:LinkButton></td>
+                </tr>
+                <tr>
+                <td><asp:LinkButton ID="lnkpwd" runat="server" CausesValidation="False" OnClick="lnkpwd_Click">Change Password</asp:LinkButton></td>
+                </tr>
+                <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" 
+                        NavigateUrl="~/Developer/view assigned projects.aspx">View Assigned Projects</asp:HyperLink>
+                    </td>
+                </tr>
+                 <tr>
+                <td>
+                    <asp:LinkButton ID="lnktrack" runat="server" CausesValidation="False" OnClick="lnktrack_Click" >Bug Tracking</asp:LinkButton>
+                </td>
+                </tr>
+                <tr>
+                <td><asp:LinkButton ID="lnklog" runat="server" CausesValidation="False" OnClick="lnklog_Click">Logout</asp:LinkButton></td>
+                </tr>
+                </table>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table></div>
+    </form>
+</body>
+</html>

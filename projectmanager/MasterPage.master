@@ -1,0 +1,130 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="projectmanager_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+            <tr>
+                <td colspan="2" style="height: 3px">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/images/header2.JPG" Height="139px" Width="993px"></asp:Image>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 200px">
+                <table>
+                    <tr>
+                <td>
+                    <asp:LinkButton ID="lnkhome" runat="server" CausesValidation="False" OnClick="lnkhome_Click">Main Page</asp:LinkButton>
+                </td>
+                </tr>
+                    <tr>
+                <td>
+                    <asp:LinkButton ID="lnknew" runat="server" CausesValidation="False" OnClick="lnknew_Click">New Project Manager</asp:LinkButton>
+                </td>
+                </tr>
+                  <tr>
+                <td>
+                    <asp:LinkButton ID="lnkdevnew" runat="server" CausesValidation="False" OnClick="lnkdevnew_Click" >New Developer</asp:LinkButton>
+                </td>
+                </tr>
+                  <tr>
+                <td>
+                    <asp:LinkButton ID="lnktester" runat="server" CausesValidation="False" OnClick="lnktester_Click">New Tester</asp:LinkButton>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <asp:LinkButton ID="lnkpm" runat="server" CausesValidation="False" OnClick="lnkpm_Click">Edit Project Manager</asp:LinkButton>
+                </td>
+                </tr>
+                  <tr>
+                <td>
+                    <asp:LinkButton ID="lnkpwd" runat="server" CausesValidation="False" OnClick="lnkpwd_Click">Change Password</asp:LinkButton>
+                </td>
+                </tr>
+                  <tr>
+                <td>
+                    <asp:LinkButton ID="lnkdev" runat="server" CausesValidation="False" OnClick="lnkdev_Click">Edit Developer details</asp:LinkButton>
+                </td>
+                </tr>
+                  <tr>
+                <td>
+                    <asp:LinkButton ID="lnkpmd" runat="server" CausesValidation="False" OnClick="lnkpmd_Click">Edit ProjectManager Details</asp:LinkButton>
+                </td>
+                </tr>
+                  <tr>
+                <td>
+                    <asp:LinkButton ID="lnktest" runat="server" CausesValidation="False" OnClick="lnktest_Click">Edit Tester Details</asp:LinkButton>
+                </td>
+                </tr>
+                  <tr>
+                <td>
+                    <asp:LinkButton ID="lnkpri" runat="server" CausesValidation="False" OnClick="lnkpri_Click">Priority</asp:LinkButton>
+                </td>
+                </tr>
+                    <tr>
+                <td>
+                    <asp:LinkButton ID="lnkprilist" runat="server" CausesValidation="False" OnClick="lnkprilist_Click">Priority List</asp:LinkButton>
+                </td>
+                </tr>
+                    <tr>
+                <td>
+                    <asp:LinkButton ID="lnkproj" runat="server" CausesValidation="False" OnClick="lnkproj_Click">Projects</asp:LinkButton>
+                </td>
+                </tr>
+                    <tr>
+                <td>
+                    <asp:LinkButton ID="lnkprojlist" runat="server" CausesValidation="False" OnClick="lnkprojlist_Click">Project List</asp:LinkButton>
+                </td>
+                </tr>
+                    <tr>
+                <td>
+                    <asp:LinkButton ID="lnkstatus" runat="server" CausesValidation="False" OnClick="lnkstatus_Click">Status</asp:LinkButton>
+                </td>
+                </tr>
+                    <tr>
+                <td>
+                    <asp:LinkButton ID="lnkslist" runat="server" CausesValidation="False" OnClick="lnkslist_Click">status List</asp:LinkButton>
+                </td>
+                </tr>
+                    <tr>
+                <td>
+                    <asp:LinkButton ID="lnkassign" runat="server" CausesValidation="False" OnClick="lnkassign_Click">Assign 
+                    Projects to Developers</asp:LinkButton>
+                </td>
+                </tr>
+                    <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" 
+                        NavigateUrl="~/projectmanager/Assign projects to Tester.aspx">Assign 
+                    Projects to Testers</asp:HyperLink>
+                </td>
+                </tr>
+                 <tr>
+                <td>
+                    <asp:LinkButton ID="lnktrack" runat="server" CausesValidation="False" OnClick="lnktrack_Click" >Bug Tracking</asp:LinkButton>
+                </td>
+                </tr>
+                    <tr>
+                <td>
+                    <asp:LinkButton ID="lnklogout" runat="server" CausesValidation="False" OnClick="lnklogout_Click">Logout</asp:LinkButton>
+                </td>
+                </tr>
+                </table>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
